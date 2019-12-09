@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewPage.Vacation.fxml.VacationFinalController">
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="303.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="400.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/mainBackgro.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="20.0" text="American Travel Bucket List">
+               <font>
+                  <Font name="Garamond Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="selectBtn" blendMode="MULTIPLY" layoutX="217.0" layoutY="501.0" mnemonicParsing="false" onAction="#acceptDestination" prefHeight="43.0" prefWidth="175.0" text="Accept Destination">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveBtn" blendMode="MULTIPLY" layoutX="9.0" layoutY="501.0" mnemonicParsing="false" onAction="#save" prefHeight="43.0" prefWidth="175.0" text="Save &amp; Exit">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="locationName" layoutX="38.0" layoutY="105.0" prefHeight="78.0" prefWidth="312.0" text="Location Name" textAlignment="CENTER" underline="true" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="188.0" text="Flight Cost :">
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="263.0" prefHeight="37.0" prefWidth="128.0" text="Hotel Cost :" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="289.0" prefHeight="37.0" prefWidth="73.0" text="(per Night)" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="flightCost" layoutX="276.0" layoutY="188.0" text="cost">
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="hotelPrice" layoutX="276.0" layoutY="267.0" text="cost">
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="description" layoutX="8.0" layoutY="326.0" prefHeight="166.0" prefWidth="385.0" text="Description" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

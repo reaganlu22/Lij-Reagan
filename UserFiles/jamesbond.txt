@@ -1,0 +1,26 @@
+James Bond	27104	GSO	1, 1, 1, 1, 1	0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 13
+0	Location1
+1	Location2
+2	Location3
+3	Location4
+4	Location5
+5	Location6
+6	Location7
+7	Location8
+8	Location9
+9	Location10
+10	Location11
+11	Location12
+12	Location13
+13	Location14
+14	Location15
+15	Location16
+16	Location17
+17	Location18
+18	Location19
+19	Location20
+20	Location21
+21	Location22
+22	Location23
+23	Location24
+24	Location25

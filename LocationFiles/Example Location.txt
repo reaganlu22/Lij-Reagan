@@ -1,0 +1,1 @@
+Location Name	zipCode	airportCode	cityCode	Description.	

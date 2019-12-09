@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewPage.Register.fxml.RegisterController">
+   <center>
+      <AnchorPane prefHeight="547.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView blendMode="DARKEN" fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/mainBackgro.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="82.0" layoutY="54.0" text="Please Sign up Here! ">
+               <font>
+                  <Font name="Garamond Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label blendMode="DARKEN" layoutX="26.0" layoutY="224.0" text="Zipcode : ">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label blendMode="DARKEN" layoutX="26.0" layoutY="166.0" text="Full Name : ">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fullNameRegField" blendMode="OVERLAY" layoutX="135.0" layoutY="169.0" prefHeight="25.0" prefWidth="220.0">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="zipCodeRegField" blendMode="OVERLAY" layoutX="137.0" layoutY="227.0" prefHeight="25.0" prefWidth="219.0">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font></TextField>
+            <Button fx:id="registerBtn" blendMode="DARKEN" layoutX="136.0" layoutY="289.0" mnemonicParsing="false" onAction="#registerNewUser" text="Register! " underline="true">
+               <font>
+                  <Font name="Garamond Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelRegBtn" blendMode="DARKEN" layoutX="159.0" layoutY="348.0" mnemonicParsing="false" onAction="#goHome" text="Cancel" underline="true">
+               <font>
+                  <Font name="Garamond Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

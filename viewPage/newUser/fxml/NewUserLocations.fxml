@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewPage.newUser.fxml.NewUserLocationsController">
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="303.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="664.0" fitWidth="478.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/mainBackgro.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="categoryName" layoutX="101.0" layoutY="2.0" prefHeight="78.0" prefWidth="242.0" text="Category Name" textAlignment="CENTER" wrapText="true" alignment="CENTER">
+               <font>
+                  <Font name="Garamond Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="68.0" prefHeight="72.0" prefWidth="336.0" text="Which of these locations are you interested in traveling to?" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitBtn" blendMode="MULTIPLY" layoutX="163.0" layoutY="602.0" mnemonicParsing="false" onAction="#submitResponses" prefHeight="43.0" prefWidth="119.0" text="Submit">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Button>
+            <Label fx:id="location1" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="247.0" text="Location 1" textFill="#0d0d0d">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="location2" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="328.0" text="Location 2" textFill="#0d0d0d">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="location0" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="151.0" text="Location 0" textFill="#0d0d0d">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="location0Selection1" blendMode="MULTIPLY" layoutX="7.0" layoutY="192.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="I haven't been but want to go" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group0" />
+               </toggleGroup>
+            </RadioButton>
+            <Label fx:id="location4" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="507.0" text="Location 4" textFill="#0d0d0d">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="location3" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="417.0" text="Location 3" textFill="#0d0d0d">
+               <font>
+                  <Font name="Garamond Bold" size="23.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="location0Selection2" blendMode="MULTIPLY" layoutX="121.0" layoutY="192.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" selected="true" text="I haven't been but don't want to go" toggleGroup="$Group0" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location0Selection3" blendMode="MULTIPLY" layoutX="253.0" layoutY="192.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" text="I want to go again" toggleGroup="$Group0" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location0Selection4" blendMode="MULTIPLY" layoutX="339.0" layoutY="192.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="100.0" text="I don't want to go again" toggleGroup="$Group0" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location1Selection1" blendMode="MULTIPLY" layoutX="7.0" layoutY="283.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="I haven't been but want to go" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="location1Selection2" blendMode="MULTIPLY" layoutX="121.0" layoutY="283.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" selected="true" text="I haven't been but don't want to go" toggleGroup="$Group1" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location1Selection3" blendMode="MULTIPLY" layoutX="253.0" layoutY="283.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" text="I want to go again" toggleGroup="$Group1" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location1Selection4" blendMode="MULTIPLY" layoutX="339.0" layoutY="283.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="100.0" text="I don't want to go again" toggleGroup="$Group1" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location2Selection1" blendMode="MULTIPLY" layoutX="7.0" layoutY="363.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="I haven't been but want to go" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="location2Selection2" blendMode="MULTIPLY" layoutX="121.0" layoutY="363.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" selected="true" text="I haven't been but don't want to go" toggleGroup="$Group2" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location2Selection3" blendMode="MULTIPLY" layoutX="253.0" layoutY="363.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" text="I want to go again" toggleGroup="$Group2" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location2Selection4" blendMode="MULTIPLY" layoutX="339.0" layoutY="363.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="100.0" text="I don't want to go again" toggleGroup="$Group2" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location4Selection1" blendMode="MULTIPLY" layoutX="7.0" layoutY="541.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="I haven't been but want to go" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group4" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="location4Selection2" blendMode="MULTIPLY" layoutX="121.0" layoutY="541.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" selected="true" text="I haven't been but don't want to go" toggleGroup="$Group4" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location4Selection3" blendMode="MULTIPLY" layoutX="253.0" layoutY="541.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" text="I want to go again" toggleGroup="$Group4" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location4Selection4" blendMode="MULTIPLY" layoutX="339.0" layoutY="541.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="100.0" text="I don't want to go again" toggleGroup="$Group4" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location3Selection1" blendMode="MULTIPLY" layoutX="7.0" layoutY="451.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="I haven't been but want to go" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group3" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="location3Selection2" blendMode="MULTIPLY" layoutX="121.0" layoutY="451.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" selected="true" text="I haven't been but don't want to go" toggleGroup="$Group3" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location3Selection3" blendMode="MULTIPLY" layoutX="253.0" layoutY="451.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" text="I want to go again" toggleGroup="$Group3" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="location3Selection4" blendMode="MULTIPLY" layoutX="339.0" layoutY="451.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="100.0" text="I don't want to go again" toggleGroup="$Group3" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
